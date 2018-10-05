@@ -1,0 +1,7 @@
+-cp src
+-D analyzer-optimize
+-lib hxcpp-debug-server
+-lib sage-agi
+-debug
+-main Main
+-cpp bin
