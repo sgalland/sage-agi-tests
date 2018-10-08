@@ -1,0 +1,4 @@
+-cp src
+-lib sage-agi
+-main Main
+-cpp bin

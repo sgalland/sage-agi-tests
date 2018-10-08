@@ -18,4 +18,4 @@ install:
   - haxelib install hxcpp
 
 script:
-  - haxe build.hxml
+  - haxe build-release.hxml
