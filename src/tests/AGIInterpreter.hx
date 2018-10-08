@@ -28,4 +28,20 @@ class AGIInterpreter extends GameTestCase {
 		else
 			throw "Unknown game VIEW entries.";
 	}
+
+	/**
+	 * Test loading LOGIC resources.
+	 */
+	public function testLogicLoading() {
+		var loader = new AGIFileReader();
+		loader.loadDirectoryEntries(sage.agi.EAGIFileName.LOGIC);
+		var entries = loader.directoryEntries.length;
+
+		if (gameEntry.gameID == "BC")
+			assertTrue(entries == 73);
+		else if (gameEntry.gameID == "MM")
+			assertTrue(entries == 73);
+		else
+			throw "Unknown game LOGIC entries.";
+	}
 }
