@@ -16,7 +16,6 @@ matrix:
 install:
   - haxelib git sage-agi https://github.com/sgalland/sage-agi.git
   - haxelib install hxcpp
-  - haxelib install hxcpp-debug-server
 
 script:
   - haxe build.hxml
